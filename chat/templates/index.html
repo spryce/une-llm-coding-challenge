@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple AI Chat System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Chat with AI</h1>
@@ -25,10 +26,9 @@
             const formData = new FormData(event.target);
             const responseDiv = document.getElementById("response");
 
-            // Notify user that we are waiting for a response
             responseDiv.innerHTML = `<p>Waiting for AI response...</p>`;
 
-            const response = await fetch("/", {
+            const response = await fetch("/chat", {
                 method: "POST",
                 body: formData,
             });
