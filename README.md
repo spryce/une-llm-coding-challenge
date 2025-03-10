@@ -52,6 +52,7 @@ The application will be available at `http://127.0.0.1:5000/`.
 
 ## Additional Information
 
+- Flask reccommends using the latest version of Python and supports 3.9 or above. 
 - This application was developed on Python 3.12
 - This application uses the LangChain open-source framework for implementing conversation history
 
@@ -66,9 +67,12 @@ User prompts:
 
 `AI response: Your favourite colour is red.`
 
-The system can handle multiple users. To test this from your local machine; Open a tab *in a different browser* and navigate to `http://127.0.0.1:5000/`. Test with similar prompts:
+The system can handle multiple unique users, but we haven't developed authentication for users yet. 
+To test unique sessions from your local machine:
+- Open a tab *in a different browser* and navigate to `http://127.0.0.1:5000/`. 
+- Test with similar prompts
 
-User 2 prompts (from a different browser):
+User 2 prompts (from a different browser e.g. Chrome vs Firefox):
 
 1. My favourite colour is blue. 
 2. What is my favourite colour?
@@ -80,7 +84,7 @@ User 1:
 
 `AI response: Your favourite colour is red.`
 
-User 1's favourite colour is still red, confirming each user has a diferent session and contextual chat history.
+User 1's favourite colour is still red, confirming each user has a different session and contextual chat history.
 
 ## Project Assumptions
 
