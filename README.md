@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Configure Environmental Variables 
 
-You must create a .env file in the root of the project and add the following keys:
+You must create a `.env` file in the root of the project and add the following keys:
 ```
 OPENAI_API_KEY=your-openai-key
 FLASK_SECRET_KEY=super-secret-key
@@ -89,11 +89,11 @@ User 1's favourite colour is still red, confirming each user has a different ses
 ## Project Assumptions
 
 - I assume this application is only intended to be run using Flask's internal development server. It has not been configured and tested on a WSGI production server.
-- I'm not aware of UNE policies so I have included an MIT license to avoid any issues.
+- I am not familiar with UNE policies so I have included an MIT license to avoid any issues.
 
 ## Future Improvements
 
-Listing potential improvements here as I think of them and will implement some if time permits.
+I will list potential improvements here as I think of them and implement some if time permits.
 
 - Choose a different package manager for better dependancy management
 - Allow users to select from other OpenAI models (or other vendors)
