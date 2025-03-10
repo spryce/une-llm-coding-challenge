@@ -20,14 +20,9 @@ def chat():
         session["session_id"] = str(uuid.uuid4())
 
     session_id = session["session_id"]
-    print("Session ID:", session_id)
-
     user_input = request.form["user_input"]
     if not user_input:
         return jsonify({"error": "User input is required"}), 400
-    print("User input:", user_input)
 
     response = get_chat_response(session_id, user_input)
-    print("AI response:", response)
-
     return jsonify({"response": response, "session_id": session_id})

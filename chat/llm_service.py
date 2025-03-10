@@ -32,7 +32,7 @@ llm_with_history = RunnableWithMessageHistory(
 def get_chat_response(session_id, user_input):
     """Process user input and return AI response."""
     messages = [("human", user_input)]
-    ai_msg = llm_with_history.invoke(
+    response = llm_with_history.invoke(
         messages, config={"configurable": {"session_id": session_id}}
     )
-    return ai_msg.content
+    return response.content

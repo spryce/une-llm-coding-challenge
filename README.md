@@ -112,6 +112,7 @@ Listing potential improvements here as I think of them and will implement some i
 - Setup a docker file for production env
 - Format the AI response
 - Display a running chat history 
+- Add a logger
 
 ## Commit History
 
