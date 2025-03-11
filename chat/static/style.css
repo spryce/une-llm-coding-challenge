@@ -53,8 +53,10 @@ button:hover {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
-    max-width: 600px;
+    min-width: 600px;
+    max-width: 60%;
+    width: fit-content;
     margin: 20px auto;
-    text-align: center;
+    text-align: left;
 }
 

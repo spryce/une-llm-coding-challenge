@@ -3,6 +3,7 @@ OpenAI based language model service for simple chat application.
 Processes user queries and provides historical conversational context using OpenAI's GPT-4 model.
 """
 
+import markdown2
 from langchain_openai import ChatOpenAI
 from langchain_core.chat_history import InMemoryChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
@@ -35,4 +36,5 @@ def get_chat_response(session_id, user_input):
     response = llm_with_history.invoke(
         messages, config={"configurable": {"session_id": session_id}}
     )
-    return response.content
+    formatted_response = markdown2.markdown(response.content)
+    return formatted_response
