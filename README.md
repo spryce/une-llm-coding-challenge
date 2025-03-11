@@ -87,9 +87,12 @@ User 1:
 
 User 1's favourite colour is still red, confirming each user has a different session and contextual chat history.
 
+Additionally, try asking: `Can you summarise our conversation history?`
+
 ## Project Assumptions
 
 - I assume this application is only intended to be run using Flask's internal development server. It has not been configured and tested on a WSGI production server.
+- I have not limited the responses to any particular subject. e.g. Coding
 - I am not familiar with UNE policies so I have included an MIT license to avoid any issues.
 
 ## Future Improvements
@@ -99,20 +102,22 @@ I will list potential improvements here as I think of them and implement some if
 - Choose a different package manager for better dependancy management
 - Allow users to select from other OpenAI models (or other vendors)
 - Error handling. Inform the user e.g. 'You exceeded your current quota, please check your plan and billing'
-- Predicted Outputs (e.g.code refactoring): https://platform.openai.com/docs/guides/predicted-outputs
 - Add auto-tracing with Langsmith
-- Add support for dev and prod environments
+- System prompts
+- Prompt templates: https://python.langchain.com/docs/concepts/prompt_templates/
+- Predicted Outputs (e.g.code refactoring): https://platform.openai.com/docs/guides/predicted-outputs
 - Better conversation management to save tokens
 - Sanitize input
 - Filter messages: https://python.langchain.com/docs/how_to/filter_messages/
 - Trim messages: https://python.langchain.com/docs/how_to/trim_messages/
 - Throttle input
+- Display a running chat history 
+- Add a logger
 - Store chat/session history in a database
 - Implement user authentication to support persistent chat history
 - Allow users to reset their session manually
+- Add support for dev and prod environments
 - Setup a docker file for production env
-- Display a running chat history 
-- Add a logger
 
 ## Commit History
 
