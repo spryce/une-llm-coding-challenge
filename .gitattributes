@@ -1,0 +1,8 @@
+# Normalize text files to LF
+* text=auto
+
+# Explicitly set LF endings for Python scripts and other code files
+*.py text eol=lf
+*.pyi text eol=lf
+*.ipynb text eol=lf
+*.sh text eol=lf
