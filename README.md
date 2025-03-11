@@ -2,6 +2,7 @@
 
 This project is a simplified Flask-based prototype of a system that interacts with an LLM via the OpenAI API.
 
+![readme-chat-ui](https://github.com/user-attachments/assets/174884c8-9f3c-443e-9e5e-5e2b49e1d963)
 
 ## Cloning the Repository
 
