@@ -111,7 +111,6 @@ I will list potential improvements here as I think of them and implement some if
 - Implement user authentication to support persistent chat history
 - Allow users to reset their session manually
 - Setup a docker file for production env
-- Format the AI response
 - Display a running chat history 
 - Add a logger
 
